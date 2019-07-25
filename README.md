@@ -1,4 +1,4 @@
-# 🎣 Matching Game: Go Fish 🎣
+# 🎣 Full-Stack Matching Game: Go Fish 🎣
 
 ![Preview](/images/preview.png)
 
@@ -19,4 +19,3 @@
 
 - http://dkmgames.com/memory/pairsrun.php (example game)
 - https://www.npmjs.com/package/knuth-shuffle
-# goFishExpress
