@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Go Fish</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="main">
+      <section class="title"><h1>Go Fish🎣</h1></section>
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+      <img class="card" src="images/water.jpg" alt="">
+    </section>
+    <section id="scoreboard">
+      <h2>Scoreboard</h2>
+      <p>Name</p><p>Score</p>
+
+
+
+      <ol>
+        <% for(var i=0; i<playerdata.length; i++) {%>
+          <li>
+            <span class="indent"><%= playerdata[i].addedplayer %></span>
+            <span><%= playerdata[i].score %></span>
+            <span class="spacing"><i class="fas fa-trophy"></i></span>
+            <span><i class="fas fa-ban"></i></span>
+          </li>
+          <% } %>
+      </ol>
+      <h4>Total Players:
+        <span class="currentPlayerName"><%= playerdata.length %></span>
+      </h4>
+    </section>
+    <section>
+      <section class="currentPlayer">
+        <h3>Current Player:
+          <span class="currentPlayerName">
+            <%= playerdata[playerdata.length - 1].addedplayer %><span>
+        </h3>
+
+      </section>
+      <form action="/newplayer" method="POST">
+        <input type="text" placeholder="New Player" name="player">
+        <button type="submit">Start</button>
+      </form>
+    </section>
+
+    <!-- Fisher–Yates/Knuth Shuffle
+    https://www.npmjs.com/package/knuth-shuffle -->
+    <script type="text/javascript" src="knuthShuffle.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>

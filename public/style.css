@@ -1,0 +1,89 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: blue;
+}
+#main{
+  width: 80%;
+  float: left;
+}
+.title{
+  width: 50%;
+  height: 200px;
+  background-color: lightblue;
+  padding: 20px;
+  border: 1px solid black;
+  float: left;
+}
+h1{
+  font-size: 102px;
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 25%;
+  height: 200px;
+  border: 1px solid lightblue;
+  float: left;
+}
+.card{
+  background-color: blue;
+  color: black;
+}
+.selected {
+  background-color: gray;
+  color: black;
+}
+.matched{
+  border: 10px solid black;
+}
+
+#scoreboard{
+  width: 20%;
+  height: 600px;
+  border: 1px solid black;
+  background-color: lightblue;
+  float: left;
+}
+h2{
+  text-decoration: underline;
+  text-align: center;
+}
+p{
+  text-align: center;
+  display: inline-block;
+  margin: 0 17% 0 17%;
+}
+.currentPlayer{
+  width: 50%;
+  height: 80px;
+  /* border: 1px solid black; */
+  float: left;
+}
+h3{
+  color: lightblue;
+  margin: 24px auto;
+  /* margin-left: 20%; */
+  text-align: center;
+}
+form{
+  width: 50%;
+  height: 80px;
+  float: left;
+}
+input{
+  margin: 24px auto;
+
+  margin-left: 40%;
+  text-align: center;
+}
+h4{
+  text-align: center;
+}
+.indent{
+  margin-right: 43%;
+}
+.spacing{
+  margin-left: 1%;
+}
