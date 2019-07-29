@@ -1,6 +1,6 @@
 # 🎣 Full-Stack Matching Game: Go Fish 🎣
 
-![Preview](/images/preview.png)
+![Preview](/public/images/preview.png)
 
 - Full-stack Web App using **Passport.js**, **Express.js**, **Node.js**, and **MongoDB**
 - Some dependencies used: *EJS*, *Body-Parser*  
